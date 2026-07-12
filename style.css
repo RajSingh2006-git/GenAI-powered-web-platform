@@ -7,11 +7,11 @@
   --cyan: #06b6d4;
   --green: #10b981;
   --amber: #f59e0b;
-  --bg: #050508;
-  --bg-2: #0a0a12;
-  --bg-3: #0f0f1a;
-  --glass: rgba(255,255,255,0.04);
-  --glass-border: rgba(255,255,255,0.08);
+  --bg: rgba(5, 5, 8, 0.85);
+  --bg-2: rgba(10, 10, 18, 0.85);
+  --bg-3: rgba(15, 15, 26, 0.85);
+  --glass: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
   --text: #f1f5f9;
   --text-muted: #94a3b8;
   --text-dim: #64748b;
@@ -25,7 +25,12 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', 'Space Grotesk', sans-serif;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: url('assets/modi.png');
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
@@ -192,21 +197,7 @@ body {
   overflow: hidden;
 }
 
-.hero-bg-image {
-  position: absolute;
-  top: 0;
-  right: -5%;
-  width: 50%;
-  height: 100%;
-  background-image: url('assets/modi.png');
-  background-size: contain;
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  opacity: 0.35;
-  z-index: -1;
-  mask-image: linear-gradient(to left, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
-  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
-}
+
 
 .hero-badge-row {
   display: flex;
