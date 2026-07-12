@@ -1031,3 +1031,15 @@ chatInput.addEventListener('keydown', e => { if(e.key==='Enter'&&!e.shiftKey){e.
 
 window.sendMessage    = sendMessage;
 window.sendSuggestion = sendSuggestion;
+
+// ──────────────────────────────────────────
+// Export for testing in Node.js
+// ──────────────────────────────────────────
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    matchIntent,
+    INTENTS,
+    html,
+    docList
+  };
+}
