@@ -7,11 +7,11 @@
   --cyan: #06b6d4;
   --green: #10b981;
   --amber: #f59e0b;
-  --bg: #050508;
-  --bg-2: #0a0a12;
-  --bg-3: #0f0f1a;
-  --glass: rgba(255,255,255,0.04);
-  --glass-border: rgba(255,255,255,0.08);
+  --bg: rgba(5, 5, 8, 0.88);
+  --bg-2: rgba(10, 10, 18, 0.9);
+  --bg-3: rgba(15, 15, 26, 0.92);
+  --glass: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
   --text: #f1f5f9;
   --text-muted: #94a3b8;
   --text-dim: #64748b;
@@ -25,7 +25,12 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', 'Space Grotesk', sans-serif;
-  background: var(--bg);
+  background-color: #050508;
+  background-image: linear-gradient(rgba(5, 5, 8, 0.75), rgba(5, 5, 8, 0.75)), url('assets/govt_tech_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
@@ -193,18 +198,7 @@ body {
   overflow: hidden;
 }
 
-.hero-bg-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 95%;
-  background-image: url('assets/modi_portrait.jpg');
-  background-size: contain;
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  z-index: 0;
-}
+
 
 .hero-badge-row {
   display: flex;
