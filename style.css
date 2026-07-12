@@ -196,12 +196,12 @@ body {
 .hero-bg-layer {
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 50%;
   height: 95%;
   background-image: url('assets/modi_portrait.jpg');
   background-size: contain;
-  background-position: bottom right;
+  background-position: bottom left;
   background-repeat: no-repeat;
   z-index: 0;
 }
