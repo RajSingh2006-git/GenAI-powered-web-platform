@@ -200,15 +200,18 @@ body {
 
 .hero-character-layer {
   position: absolute;
-  bottom: 0;
-  left: 2%;
-  width: 35%;
-  height: 80%;
-  max-height: 550px;
-  background-image: url('assets/modi_transparent.png');
-  background-size: contain;
-  background-position: bottom left;
-  background-repeat: no-repeat;
+  bottom: 8%;
+  left: 4%;
+  width: 25%;
+  max-width: 320px;
+  aspect-ratio: 1;
+  background-image: url('assets/modi_namaste.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 
+              0 0 30px rgba(6, 182, 212, 0.15);
   z-index: -1; /* Behind text, above background map */
   pointer-events: none;
 }
