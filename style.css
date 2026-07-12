@@ -193,6 +193,22 @@ body {
   overflow: hidden;
 }
 
+.hero-bg-layer {
+  position: absolute;
+  top: 0;
+  right: -5%;
+  width: 50%;
+  height: 100%;
+  background-image: url('assets/modi_portrait.jpg');
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+  z-index: -1;
+  mask-image: linear-gradient(to left, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+}
+
 .hero-badge-row {
   display: flex;
   gap: 10px;
